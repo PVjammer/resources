@@ -80,7 +80,7 @@ def run_darknet(config=None):
                 cv2.rectangle(frame, (int(x-w/2),int(y-h/2)),(int(x+w/2),int(y+h/2)),(255,0,0))
                 cv2.putText(frame, str(cat.decode("utf-8")), (int(x), int(y)), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 255, 0))
              # Handles the mirroring of the current frame
-            frame = cv2.flip(frame,1)
+#             frame = cv2.flip(frame,1)
 
             # Saves for video
             out.write(frame)
