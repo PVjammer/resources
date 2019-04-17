@@ -1,0 +1,46 @@
+{
+	"info": {
+		"name": "darknet",
+		"type": "eta.core.types.Module",
+		"version": "0.1.01",
+		"description": "Darknet yolov3 algorithm wrapped in python using pydarknet, and confugured as an eta module",
+		"exe": "darknet.py"
+	},
+	"inputs":[
+		{
+			"name": "input_path",
+			"type": "eta.core.types.Video",
+			"description": "Input video path",
+			"required": true
+		}
+	],
+	"outputs":[
+		{
+			"name": "output_path",
+			"type": "eta.core.types.VideoFile",
+			"description": "Annotated video",
+			"required": true
+		}
+	],
+	"parameters": [
+		{
+			"name": "cfg_path",
+			"type": "eta.core.types.String",
+			"description": "Path to the model config",
+			"required":true
+		},
+		{
+			"name": "weights_path",
+			"type": "eta.core.types.String",
+			"description": "Path to the model weights",
+			"required": true
+		},
+		{
+			"name": "data_path",
+			"type": "eta.core.types.String",
+			"description": "Path to the data",
+			"requred": true
+		}
+	]
+}
+

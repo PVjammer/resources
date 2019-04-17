@@ -1,0 +1,29 @@
+{
+    "info": {
+        "name": "darknet",
+        "type": "eta.core.types.Pipeline",
+        "version": "0.1.0",
+        "description": "A pipeline for object detection on video"
+    },
+    "inputs": ["video"],
+    "outputs": ["video"],
+    "modules": {
+        "darknet": {
+            "name": "darknet",
+            "tunable_parameters": [
+                "cfg_path", "weights_path", "data_path"
+            ],
+            "set_parameters": {}
+        }
+    },
+    "connections": [
+        {
+            "source": "INPUT.video",
+            "sink": "darknet.input_path"
+        },
+        {
+            "source": "darknet.output_path",
+            "sink": "OUTPUT.video"
+        }
+    ]
+}

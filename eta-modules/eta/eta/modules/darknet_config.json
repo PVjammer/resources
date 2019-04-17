@@ -1,0 +1,13 @@
+{
+    "data":[
+        {
+            "input_path": 1,
+            "output_path":"processed_stream.avi",
+        }
+    ],
+    "parameters":{
+        "cfg_path" :  "config/yolov3.cfg",
+        "weights_path" :  "config/yolov3.weights",
+        "data_path" :  "config/coco.data"
+    }
+}

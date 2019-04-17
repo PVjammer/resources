@@ -1,0 +1,14 @@
+{
+	"pipeline": "darknet",
+	"inputs": {
+		"video":"path/to/webcam.mp4"
+	},
+	"outputs": {
+        "video": "examples/out/video-formatted.mp4"
+    },
+	"parameters": {
+		"darknet.cfg_path": "config/yolov3.cfg", 
+		"darknet.weights_path": "config/yolov3.weights", 
+		"darknet.data_path": "config/coco.data"
+	}
+}
